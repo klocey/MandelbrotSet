@@ -1,0 +1,64 @@
+/* Full dark background and reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100% !important;
+    width: 100% !important;
+    background-color: #595959;
+    color: #cccccc;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+/* App wrapper */
+.main-container {
+    height: 100vh !important;
+    width: 100vw !important;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header text */
+.title {
+    text-align: center;
+    color: #cccccc;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* Reset button */
+.reset-button {
+    background-color: #444;
+    color: #cccccc;
+    border: none;
+    padding: 8px 16px;
+    margin: 5px auto;
+    display: block;
+    cursor: pointer;
+}
+
+/* Info text */
+.info {
+    text-align: center;
+    color: #cccccc;
+    margin-bottom: 5px;
+}
+
+/* Graph wrapper container (ensures graph fills space) */
+.graph-wrapper {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+/* Mandelbrot Graph expands to fill container */
+.mandelbrot-graph {
+    flex-grow: 1;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
